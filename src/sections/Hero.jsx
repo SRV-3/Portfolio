@@ -61,11 +61,11 @@ const Hero = () => {
                </div>
                <div className="text-sm border-l-2 border-white/30 pl-4">
                   <span className="text-white/60 font-mono">02</span>
-                  <p className="font-medium mt-1">UI/UX Design</p>
+                  <p className="font-medium mt-1">AWS Deployment</p>
                </div>
                <div className="text-sm border-l-2 border-white/30 pl-4">
                   <span className="text-white/60 font-mono">03</span>
-                  <p className="font-medium mt-1">AWS Deployment</p>
+                  <p className="font-medium mt-1">UI/UX Design</p>
                </div>
             </div>
           </motion.div>

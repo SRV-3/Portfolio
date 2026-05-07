@@ -20,13 +20,26 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-[#111111] text-white">
+    <section id="about" className="py-24 md:py-40 bg-transparent text-white relative overflow-hidden">
+      {/* Giant Scrolling Watermark */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full overflow-hidden pointer-events-none opacity-[0.03] z-0 select-none flex">
+        <motion.div 
+          animate={{ x: [0, "-50%"] }}
+          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          className="flex whitespace-nowrap"
+        >
+          <h1 className="text-[15rem] md:text-[25rem] font-black tracking-tighter" style={{ WebkitTextStroke: "2px white", color: "transparent" }}>
+            CREATIVE DEVELOPER • DIGITAL DESIGNER • CREATIVE DEVELOPER • DIGITAL DESIGNER • 
+          </h1>
+        </motion.div>
+      </div>
+
       <motion.div 
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, margin: "-100px", amount: 0.1 }}
-        className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24"
+        className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10"
       >
         
         {/* Left Column: Intro */}
