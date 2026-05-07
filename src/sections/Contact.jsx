@@ -81,7 +81,7 @@ const Contact = () => {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.6 }}
           className="flex flex-col justify-center"
         >
@@ -142,7 +142,7 @@ const Contact = () => {
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative perspective-[1000px] w-full max-w-md mx-auto lg:mr-0"
         >

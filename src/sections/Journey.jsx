@@ -68,7 +68,7 @@ const Journey = () => {
                   <motion.div 
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: false, margin: "-100px", amount: 0.1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#FF4500] rounded-full -translate-x-1/2 mt-1.5 md:mt-0 shadow-[0_0_15px_rgba(255,69,0,0.5)] z-10"
                   ></motion.div>
@@ -79,7 +79,7 @@ const Journey = () => {
                       <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: false, margin: "-100px", amount: 0.1 }}
                         transition={{ duration: 0.6 }}
                       >
                         <h4 className="text-2xl font-bold text-white mb-2">{step.title}</h4>
@@ -96,7 +96,7 @@ const Journey = () => {
                     <motion.div
                       initial={{ opacity: 0, x: 50 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
+                      viewport={{ once: false, margin: "-100px", amount: 0.1 }}
                       transition={{ duration: 0.6 }}
                     >
                       <span className="text-xs font-mono text-white/40 tracking-widest uppercase block mb-2 md:hidden">

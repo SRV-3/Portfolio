@@ -30,7 +30,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] md:w-[75%] lg:w-[60%] max-w-[900px] z-0 flex justify-center items-end pointer-events-none"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] md:w-[75%] lg:w-[60%] max-w-[900px] z-0 hidden md:flex justify-center items-end pointer-events-none"
         >
           <img 
             src={heroImg} 
