@@ -53,7 +53,7 @@ const Footer = () => {
             className="flex items-center space-x-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-6 py-3 transition-colors text-sm font-medium"
           >
             <Mail size={16} className="text-[#FF4500]" />
-            <span>hello@sourav.dev</span>
+            <span>thakursourav778@gmail.com</span>
           </a>
         </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
           <h3 className="text-sm font-mono text-[#FF4500] tracking-widest uppercase mb-6">Connect</h3>
           <div className="flex space-x-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/SRV-3" 
               target="_blank" 
               rel="noreferrer"
               className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:border-[#FF4500] hover:text-[#FF4500] transition-colors"
@@ -81,7 +81,7 @@ const Footer = () => {
               <GithubIcon size={18} />
             </a>
             <a 
-              href="https://twitter.com" 
+              href="https://x.com/Sourav30360541" 
               target="_blank" 
               rel="noreferrer"
               className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:border-[#FF4500] hover:text-[#FF4500] transition-colors"
@@ -89,7 +89,7 @@ const Footer = () => {
               <TwitterIcon size={18} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/souravs01/" 
               target="_blank" 
               rel="noreferrer"
               className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:border-[#FF4500] hover:text-[#FF4500] transition-colors"

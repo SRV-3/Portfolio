@@ -3,8 +3,22 @@ import { motion } from 'motion/react';
 import heroImg from '../assets/hero.png';
 
 const Hero = () => {
+  const handleScrollTo = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      const navHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - navHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
-    <section className="relative w-full min-h-screen bg-[#111111] text-white font-sans flex flex-col">
+    <section id="home" className="relative w-full min-h-screen bg-[#111111] text-white font-sans flex flex-col">
       {/* Orange Gradient Background Area that contains Nav and Hero Data */}
       <div className="relative w-full bg-gradient-to-br from-[#FF4500] via-[#D83A00] to-[#801F00] rounded-b-[40px] md:rounded-b-[80px] flex flex-col pt-6 pb-0 overflow-hidden min-h-[85vh]">
         
@@ -72,6 +86,7 @@ const Hero = () => {
             
             <div className="flex items-center space-x-4">
               <motion.button 
+                onClick={(e) => handleScrollTo(e, 'projects')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
@@ -84,7 +99,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Black Section (Trusted By) */}
-      <motion.div 
+      {/* <motion.div 
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
@@ -97,7 +112,7 @@ const Hero = () => {
           <span className="whitespace-nowrap">[] Frame Blox</span>
           <span className="whitespace-nowrap">OO Ultra Blox</span>
         </div>
-      </motion.div>
+      </motion.div> */}
 
     </section>
   );
