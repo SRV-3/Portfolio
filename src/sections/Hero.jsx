@@ -8,37 +8,8 @@ const Hero = () => {
       {/* Orange Gradient Background Area that contains Nav and Hero Data */}
       <div className="relative w-full bg-gradient-to-br from-[#FF4500] via-[#D83A00] to-[#801F00] rounded-b-[40px] md:rounded-b-[80px] flex flex-col pt-6 pb-0 overflow-hidden min-h-[85vh]">
         
-        {/* Navbar */}
-        <nav className="relative z-30 flex justify-between items-center px-6 md:px-12">
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-2xl font-bold tracking-tighter"
-          >
-            Sourav.
-          </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="hidden md:flex space-x-8 text-sm font-medium"
-          >
-            <a href="#home" className="hover:text-white/80 transition-colors">Home</a>
-            <a href="#about" className="hover:text-white/80 transition-colors">About</a>
-            <a href="#projects" className="hover:text-white/80 transition-colors">Projects</a>
-          </motion.div>
-
-          <motion.button 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2"
-          >
-            <span>Hire Me</span>
-            <span className="bg-[#FF4500] text-white rounded-full p-1 w-6 h-6 flex items-center justify-center text-xs">→</span>
-          </motion.button>
-        </nav>
+        {/* Top Spacer to account for fixed Navbar */}
+        <div className="pt-24 md:pt-32"></div>
 
         {/* Huge Absolute Image (Lowest Z-Index) */}
         <motion.div 
