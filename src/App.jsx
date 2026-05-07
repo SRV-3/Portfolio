@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
+import Service from './sections/Service'
 import { Outlet } from 'react-router'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <Service/>
       <Outlet/>
     </div>
   )
