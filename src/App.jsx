@@ -6,6 +6,7 @@ import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Service from './sections/Service'
 import Journey from './sections/Journey'
+import Contact from './sections/Contact'
 import Footer from './components/Footer'
 import { Outlet } from 'react-router'
 
@@ -19,6 +20,7 @@ function App() {
       <Projects/>
       <Service/>
       <Journey/>
+      <Contact/>
       <Outlet/>
       <Footer/>
     </div>

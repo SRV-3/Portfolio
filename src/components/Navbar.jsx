@@ -64,6 +64,7 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <motion.button 
+          onClick={(e) => handleScrollTo(e, 'contact')}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -102,7 +103,10 @@ const Navbar = () => {
               <a href="#journey" onClick={(e) => handleScrollTo(e, 'journey')} className="hover:text-[#FF4500] transition-colors">Journey</a>
             </div>
             
-            <button className="mt-8 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition-colors flex items-center space-x-3">
+            <button 
+              onClick={(e) => handleScrollTo(e, 'contact')}
+              className="mt-8 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition-colors flex items-center space-x-3"
+            >
               <span>Hire Me</span>
               <span className="bg-[#FF4500] text-white rounded-full p-1 w-6 h-6 flex items-center justify-center text-sm">→</span>
             </button>
