@@ -4,6 +4,7 @@ import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Service from './sections/Service'
+import Journey from './sections/Journey'
 import { Outlet } from 'react-router'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Service/>
+      <Journey/>
       <Outlet/>
     </div>
   )
