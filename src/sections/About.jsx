@@ -19,29 +19,6 @@ const About = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
-  const techCategories = [
-    {
-      title: "Frontend",
-      skills: ["React.js", "Tailwind CSS", "Responsive UI Design"]
-    },
-    {
-      title: "Backend",
-      skills: ["Node.js", "Express.js", "REST APIs"]
-    },
-    {
-      title: "Database",
-      skills: ["MongoDB", "Aggregation Pipelines"]
-    },
-    {
-      title: "DevOps & Tools",
-      skills: ["Docker", "Kubernetes (Basics)", "Git & GitHub"]
-    },
-    {
-      title: "Other",
-      skills: ["JWT Auth", "Google OAuth", "Payment Gateway", "Nodemailer"]
-    }
-  ];
-
   return (
     <section id="about" className="py-24 md:py-32 bg-[#111111] text-white">
       <motion.div 
@@ -53,7 +30,7 @@ const About = () => {
       >
         
         {/* Left Column: Intro */}
-        <motion.div variants={itemVariants} className="lg:col-span-5">
+        <motion.div variants={itemVariants} className="lg:col-span-6 xl:col-span-5">
           <h2 className="text-sm font-mono text-[#FF4500] tracking-widest uppercase mb-6">Behind the Code</h2>
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-8">
             Building scalable systems & modern web apps.
@@ -92,8 +69,8 @@ const About = () => {
           </motion.button>
         </motion.div>
 
-        {/* Right Column: Focus & Tech */}
-        <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+        {/* Right Column: Focus */}
+        <div className="lg:col-span-6 xl:col-span-7 flex flex-col justify-center">
           
           {/* Experience / Focus */}
           <motion.div variants={itemVariants}>
@@ -123,33 +100,6 @@ const About = () => {
                 Interested in deployment, containerization and cloud infrastructure
               </li>
             </ul>
-          </motion.div>
-
-          {/* Tech Summary */}
-          <motion.div variants={itemVariants}>
-            <h4 className="text-xl font-bold mb-8 flex items-center">
-              <span className="w-2 h-2 rounded-full bg-[#FF4500] mr-3"></span>
-              Tech Arsenal
-            </h4>
-            <div className="space-y-8">
-              {techCategories.map((category, idx) => (
-                <div key={idx}>
-                  <h5 className="text-white/40 text-xs font-mono tracking-widest uppercase mb-3">
-                    {category.title}
-                  </h5>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, sIdx) => (
-                      <span 
-                        key={sIdx}
-                        className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-md text-sm text-white/90 hover:border-white/30 transition-colors"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
           </motion.div>
 
         </div>
